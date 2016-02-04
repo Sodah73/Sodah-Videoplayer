@@ -1,11 +1,17 @@
 #Sodah-Videoplayer
 -------------------------
 Contributors: Sodah
+
 Tags: responsive, html5, video, player, javascript
+
 Tested up to: 4.2.2
+
 Stable tag: 1.15.12.07
+
 License: LGPLv3
+
 License URI: http://www.gnu.org/licenses/lgpl-3.0.html
+
 Demo: [wordpress plugin responsive video player](http://www.sodah.de/wordpress-plugin-responsive-video-player/)
 
 Self-hosted responsive HTML5 video for WordPress, built on the widely used jPlayer HTML5 video player. Embed video in your post or page using HTML5.
