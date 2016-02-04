@@ -256,7 +256,7 @@ function sodah_videoplayer_shortcode($atts=array()){
       $mp4 = $atts['mp4'];
   }
   if(isset($atts['mp3'])){
-      $mp4 = $atts['mp3'];
+      $mp3 = $atts['mp3'];
   }
   if(isset($atts['webm'])){
       $webm = $atts['webm'];
