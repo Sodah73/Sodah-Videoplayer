@@ -4,7 +4,7 @@ Contributors: Sodah
 
 Tags: responsive, html5, video, player, javascript
 
-Tested up to: 4.2.2
+Tested up to Wordpress Version: 4.4.2
 
 Stable tag: 1.15.12.07
 
