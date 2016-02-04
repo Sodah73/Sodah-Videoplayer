@@ -1,4 +1,5 @@
-=== Sodah-Videoplayer ===
+#Sodah-Videoplayer
+-------------------------
 Contributors: Sodah
 Tags: responsive, html5, video, player, javascript
 Tested up to: 4.2.2
