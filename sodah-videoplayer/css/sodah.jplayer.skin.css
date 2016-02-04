@@ -1,0 +1,293 @@
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "player-font" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.jPlayer {
+  display: block;
+  margin-bottom: 10px;
+  overflow: hidden;
+  color: #f9f9f9;
+  text-shadow: 0 1px 0 #000;
+  /* Chrome FIX for full screen */
+}
+.jPlayer a {
+  color: #f9f9f9;
+  text-decoration: none;
+  outline-style: none;
+  outline-width: 0;
+}
+.jPlayer * {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.jPlayer a.smooth {
+  transition: all 0.1s linear;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+}
+.jPlayer .jPlayer-container {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+.jPlayer.jp-video-full > .controls {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+}
+.jPlayer.jp-video-full, .jPlayer.jp-video-full object, .jPlayer.jp-video-full video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  border-width: 0px;
+  z-index: 999;
+}
+.jPlayer.jp-video-full .playerScreen {
+  position: static;
+}
+.jPlayer.jp-video-full .playerScreen .video-play {
+  z-index: 1000;
+}
+.jPlayer .playerScreen {
+  cursor: pointer;
+  position: relative;
+}
+.jPlayer .playerScreen .video-play {
+  display: block;
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+.jPlayer .playerScreen .video-play .play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -60px 0 0 -60px;
+  display: block;
+  width: 120px;
+  height: 120px;
+  font-size: 6em;
+  text-align: center;
+  line-height: 140px;
+  text-shadow: none;
+}
+.jPlayer .controls {
+  display: block;
+  position: relative;
+  font-size: 12px;
+  height: 32px;
+  line-height: 32px !important;
+  background: #232323;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #303030;
+}
+.jPlayer .controls .progress-block {
+  display: block;
+  width: auto;
+  margin: 0 185px 0 45px;
+}
+.jPlayer .controls .progress-block .videotimer {
+  text-align: center;
+}
+.jPlayer .controls .progress-block .videotimer.videocurrent {
+  float: left;
+  width: 40px;
+}
+.jPlayer .controls .progress-block .videotimer.videoduration {
+  float: right;
+  width: 40px;
+}
+.jPlayer .controls .progress-block .videoprogress {
+  /*xxxxxxxxxxxxxxxxxxxxxxxxx*/
+  display: block;
+  width: auto;
+  margin: 0 45px 0 45px;
+  height: 100%;
+  padding: 13px 0;
+  z-index: 9;
+}
+.jPlayer .controls .progress-block .videoprogress .seekBar {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  height: 6px;
+  background: #3d3d3d;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  overflow: hidden;
+}
+.jPlayer .controls .progress-block .videoprogress .seekBar .playBar {
+  display: block;
+  position: relative;
+  height: 100%;
+  padding: 0;
+  background: #0082b2;
+}
+.jPlayer .controls .volumeblock {
+  display: block;
+  position: absolute;
+  right: 40px;
+  top: 0;
+  width: 80px;
+  margin: 0 10px;
+  height: 32px;
+  font-size: 0;
+}
+.jPlayer .controls .volumeblock .volume-control {
+  display: inline-block;
+  height: 5px;
+  width: 100%;
+  cursor: pointer;
+  background: #3d3d3d;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  vertical-align: middle;
+  overflow: hidden;
+}
+.jPlayer .controls .volumeblock .volume-control .volume-value {
+  display: block;
+  width: 20%;
+  height: 100%;
+  background: #0082b2;
+}
+.jPlayer .controls .controlset {
+  display: block;
+  position: absolute;
+  text-align: center;
+  top: 0;
+}
+.jPlayer .controls .controlset.left {
+  left: 0;
+}
+.jPlayer .controls .controlset.right {
+  right: 0;
+}
+.jPlayer .controls .controlset.right-volume {
+  right: 140px;
+}
+.jPlayer .controls .controlset .play, .jPlayer .controls .controlset .pause, .jPlayer .controls .controlset .fullscreen, .jPlayer .controls .controlset .smallscreen, .jPlayer .controls .controlset .mute, .jPlayer .controls .controlset .unmute {
+  display: inline-block;
+  width: 38px;
+  height: 32px;
+  font-size: 1.4444444444em;
+  background: transparent;
+}
+.jPlayer .controls .controlset .play:hover, .jPlayer .controls .controlset .pause:hover, .jPlayer .controls .controlset .fullscreen:hover, .jPlayer .controls .controlset .smallscreen:hover, .jPlayer .controls .controlset .mute:hover, .jPlayer .controls .controlset .unmute:hover {
+  background: #3d3d3d;
+}
+.jPlayer.audioPlayer .playerScreen .video-play {
+  display: none !important;
+}
+.jPlayer.audioPlayer .controls .controlset.right {
+  display: none;
+}
+.jPlayer.audioPlayer .controls .controlset.right-volume {
+  right: 100px;
+}
+.jPlayer.audioPlayer .controls .progress-block {
+  margin: 0 140px 0 40px;
+}
+.jPlayer.audioPlayer .controls .volumeblock {
+  right: 5px;
+}
+.jPlayer.light {
+  color: black;
+  text-shadow: 0 1px 0 #fff;
+}
+.jPlayer.light a {
+  color: black;
+}
+.jPlayer.light .playerScreen .video-play {
+  background: rgba(204, 204, 204, 0.4);
+}
+.jPlayer.light .controls {
+  background: #f4f4f4;
+  border: 1px solid #e7e7e7;
+}
+.jPlayer.light .controls .play:hover, .jPlayer.light .controls .pause:hover, .jPlayer.light .controls .fullscreen:hover, .jPlayer.light .controls .smallscreen:hover, .jPlayer.light .controls .mute:hover, .jPlayer.light .controls .unmute:hover {
+  background: #dbdbdb;
+}
+.jPlayer.light .controls .volumeblock .volume-control, .jPlayer.light .controls .progress-block .videoprogress .seekBar {
+  background: #dbdbdb;
+}
+.jPlayer.light .controls .volumeblock .volume-control .volume-value, .jPlayer.light .controls .progress-block .videoprogress .seekBar .playBar {
+  background: #0082b2;
+}
+
+.icon-pause:before {
+  content: "c";
+}
+
+.icon-play:before {
+  content: "d";
+}
+
+.icon-fullscreen:before {
+  content: "a";
+}
+
+.icon-fullscreen-exit:before {
+  content: "i";
+}
+
+.icon-mute:before {
+  content: "b";
+  color: red;
+}
+
+.icon-volume:before {
+  content: "e";
+}
+
+.icon-play-circle:before {
+  content: "f";
+}
+
+@media (max-width: 480px) {
+  .jPlayer .controls .progress-block {
+    margin: 0 40px 0 40px;
+  }
+
+  .jPlayer.audioPlayer .controls .progress-block {
+    margin: 0 5px 0 40px;
+  }
+
+  .jPlayer .controls .volumeblock {
+    display: none;
+  }
+
+  .jPlayer .controls .controlset.right-volume {
+    display: none;
+  }
+
+  .jPlayer .playerScreen .video-play .play-icon {
+    font-size: 3.5em;
+    margin: -35px 0 0 -35px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+  }
+}
